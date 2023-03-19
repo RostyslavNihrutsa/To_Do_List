@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="main.css" />
+    <title>To do list</title>
+  </head>
+  <body class="container mx-auto px-10 pt-10 h-full flex flex-col bg-gray-600">
+    <!-- Header -->
+    <header class="bg-teal-600 rounded-t-2xl flex items-center">
+      <!-- logo -->
+      <div class="ml-5">
+        <div class="flex flex-col text-white bg-transparent text-lg font-black border-2 rounded-lg p-1">
+          <span class="leading-3">To Do</span>
+          <span class="text-2xl tracking-widest leading-5">List</span>
+        </div>
+      </div>
+      <!-- text -->
+      <h1 class="text-3xl flex-1 font-bold text-center text-white tracking-wide py-4">To do list</h1>
+    </header>
+
+    <!-- Main -->
+    <main class="flex-1 bg-gray-700">
+      <!-- section lists -->
+      <div class="flex h-full">
+        <div class="bg-gray-200 w-72 border-r-2 p-2 border-gray-300">
+          <form action="" name="addList">
+            <input
+              type="text"
+              name="titleNewList"
+              id=""
+              class="block w-full py-2 border-2 border-gray-300 rounded-xl px-2 text-xl my-3"
+            />
+            <button
+              type="submit"
+              class="
+                border-2
+                bg-teal-700
+                py-1
+                text-white
+                font-bold
+                text-xl
+                tracking-widest
+                border-teal-700
+                w-full
+                rounded-md
+              "
+            >
+              Add new list
+            </button>
+          </form>
+          <h2 class="text-center text-2xl font-semibold my-5 font- tracking-widest">Lists:</h2>
+          <ul class="_list-lists"></ul>
+        </div>
+
+        <!-- section one list -->
+        <div class="bg-gray-100 flex-1 py-2 px-5">
+          <form action="" name="addItem">
+            <div class="flex items-center gap-2 justify-center flex-wrap">
+              <input
+                type="text"
+                name="titleNewItem"
+                id=""
+                class="flex-1 max-w-md py-2 border-2 border-gray-300 rounded-xl px-2 text-xl my-3"
+              />
+              <button
+                type="submit"
+                class="
+                  border-2
+                  bg-teal-700
+                  py-2
+                  text-white
+                  font-bold
+                  text-xl
+                  tracking-widest
+                  border-teal-700
+                  px-5
+                  min-w-max
+                  rounded-md
+                "
+              >
+                Add new task
+              </button>
+            </div>
+          </form>
+          <h2 class="text-center text-2xl font-semibold mt-5 font- tracking-widest" id="listTitle"></h2>
+          <ul class="_list-items max-w-2xl mx-auto"></ul>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="src/script.js"></script>
+  </body>
+</html>
